@@ -1,0 +1,271 @@
+<html>
+    <link rel= "shortcut icon" href="mugiwara.ico">
+    <head>
+        <title> Huda Alim 
+        </title>
+        <meta name="viewport" content="width=device-width, initialscale=1">
+        <style>
+            .container {
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 15px 30px;
+                grid-gap: 0px;
+                background: lightgrey;
+            }
+            .topbar {
+                background: rgb(233, 141, 122);
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .navbar {
+                background: grey;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: grey;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: rgb(233, 141, 122);}
+            ul.navbar li a.active {background-color: rgb(233, 141, 122);}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+            .slidder {
+                background: transparent;
+                margin-top: 20px;
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                width: auto;
+                height: auto;
+            }
+            .slidder{
+                overflow: hidden;
+            }
+            .isi img {
+                width: 20%;
+                float: left;
+            }
+            .isi {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                animation: 15s slider infinite;
+                left: 0;
+            }
+            
+            @keyframes slider {     
+            0% {
+                left: 0;  
+            }          
+            20% {
+                left: 0; ; 
+            }     
+            25% {
+                left: -100%;  
+            }       
+            45% {
+                left: -100%;  
+            }     
+            50% {
+                left: -200%;  
+            }     
+            70% {
+                left: -200%;  
+            }    
+            75% {
+                left: -300%;  
+            }   	
+            95% {
+                left: -300%;
+            }   	
+            100% {
+                left: -400%; 
+            }
+        }
+
+        .content{
+            grid-row-start: 4;
+            max-width: 100%;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background: transparent;
+            height: auto;
+            overflow: hidden;
+            margin: 20px auto;
+        } 
+        .content1{
+            background: transparent;
+            border: 4px solid rgb(233, 141, 122);
+            width: 200px;
+            margin: 45px;
+            padding: 27px;
+            float: left;
+            align: justify;
+        }
+        .content2{
+            background: transparent;
+            border: 4px solid rgb(233, 141, 122);
+            width: 500px;
+            margin: 45px;
+            padding: 27px;
+            float: left;
+            align: center;
+        }
+        .content3{
+            background: transparent;
+            border: 4px solid rgb(233, 141, 122);
+            width: 200px;
+            margin: 45px;
+            padding: 27px;
+            float: left;
+            align: center;
+        }
+
+        @media screen and (max-width: 1080px){
+            .content{
+                width:100%;
+            }
+            .content1{
+                width: 25%;
+            }
+            .content2{
+                width: 68%;
+                float: right;
+            }
+            .content3{
+                clear: both;
+                padding: 1% 4%;
+                width: auto;
+                float: none;
+            }
+        }
+
+        @media screen and (max-width: 780px){
+            .content1{
+                width: auto;
+                float:none;
+            }
+            .content2{
+                width: auto;
+                float:none;
+            }
+            .content3{
+                width: auto;
+                float:none;
+            }
+        }
+
+        .footer{
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            max-width: 100%;
+            height: auto;
+            padding: 5px;
+            background: rgb(233, 141, 122);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class='topbar'><font face="arial" size=2pt color=white><b><marquee loop="1000">SELAMAT DATANG DI RAFTEL</marquee></b></font></div>
+            <div class='navbar'>
+                <nav>
+                    <ul class="navbar">
+                        <font face="arial" size=2pt color=white><b>
+                        <li><a class="active" href="index.html">ABOUT ME</a></li>
+                        <li><a href="hobi.html">HOBBY & ENTHUSIAST</a></li>
+                        <li><a href="galeri.html">GALLERY</a></li>
+                        <li><a href="artikel.html">ARTICLE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class='slidder'>
+                <div class='isi'>
+                    <img src="gambar/New_design/graphic_design.png"alt>
+                    <img src="gambar/slidder_index2.png"alt>
+                    <img src="gambar/slidder_index3.png"alt>
+                    <img src="gambar/slidder_index4.png"alt>
+                    <img src="gambar/New_design/graphic_design.png"alt>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content1">
+                <font face="arial" size= 5pt color= black>
+                        <p align= center><b>MENERIMA JASA DESIGN & EDITING FILM</b></p>
+                </font>
+                <font face="arial" size= 2pt color= black>        
+                        <p align= justify>Di website ini saya juga membuka jasa untuk membuat berbagai macam design produk yang diinginkan
+                        seperti logo, kaos, kemeja, jaket, Name Tag, Kop surat dll.
+                        tidak hanya berupa design saja untuk yang ingin pembuatan film atau jasa edit film. 
+                        Silahkan hubungi kontak dibagian bawah atau bisa lewat media sosial saya.
+                        Jika ingin melihat beberapa hasil design yang saya buat bisa cek di menu Gallery,</p>
+                        <p>Jangan lupa juga follow media sosial saya dan ajak teman-teman kalian untuk melihat-lihat design yang telah saya. Terima kasih......</p>
+                </font> 
+                </div>
+                <div class="content2">
+                <font face="arial" size= 5pt color= black>
+                                <p align= center><b>PROFILE</b></p>
+                </font>
+                <font face="arial" size= 2pt color= black>
+                        <p align= justify>
+                                Nama saya <b> HUDA ALIM GUNAWAN SAPUTRA </b>, lahir tanggal 10 september 1998, di kota tangerang.
+                                riwayat pendidikan saya :	1. SD Baron 2 Kabupaten Magetan,Jawa Timur.
+				                                            2. SMPN 4 Magetan Kabupaten Magetan,Jawa Timur. (hanya sampai kelas 1 semester 1) lalu pindah
+				                                            3. SMPN 4 Pasar Kemis Kabupaten Tangerang,Banten.
+				                                            4. SMK Bhakti Anindya jurusan Multimedia Kota Tangerang,Banten
+                                                            5. Perguruan Tinggi Lepisi Jurusan TEKNIK INFORMATIKA (belum lulus).
+                                pernah magang sewaktu smk di perusahaan cukup ternama, yaitu COSMOS, selama 3 bulan.
+                                menguasai berbagai software seperti : <i>COREL DRAW, ADOBE PHOTOSOP, INKSCAPE, ADOBE AFTER EFFECT, ADOBE FLASH, ADOBE PREMIER, FILMORA, WINDOWS MOVIE MAKER.</i>
+                        </p>
+                </font>
+                </div>
+                <div class="content3">
+                        <font face="arial" size= 5pt color= black>
+                        <p align= center><b>Lain - Lain</b></p>
+                        </font>
+                        <font face="arial" size= 2pt color= black>    
+                        <p align= justify> 
+                                Seperti orang - orang lainnya saya juga memiliki cita - cita, yaitu menjadi seorang pilot,
+                                pasti kalian bertanya - tanya kenapa riwayat pendidikannya malah mengambiljurusan IT, yah begitulah hidup tidak sesuai apa yang kita harapkan.
+                                Akan tetapi justru setelah saya belajar dalam jurusan yang saya pelajari sewaktu bersekolah membuat cita - cita saya berubah,
+                                dari awalnya menjadi pilot, sekarang saya ingin menjadi pemilik atau menjadi produser di stasiun televisi.
+                                kenapa saya ingin menjadi pemilik atau produser stasiun televisi, karena saya sedih melihat acara - acara telivisi jaman sekarang,
+                                yang hanya mementingkan pendapatan, tanpa memikirkan apakah acara yang ditayangkan itu dilihat oleh generasi penerus bangsa atau tidak,
+                                yah memang sekarang sudah ada kebijakan KPI yang mulai tegas terhadap acara acara yang merusak moral bangsa, akan tetapi masih saja ada acara yang tidak mendidik,
+                                salah satunya <i>sinetron</i>.
+                        </p>
+                        <p>Itulah cita - cita saya sekarang, yah walaupun receh, itu tetap cita - cita saya</P>
+                        </font>
+                </div>
+            </div>
+            <div class='footer'>
+                <font face="arial" size=2pt color=black><b>
+                <p>
+                <p>Copyright©2019</p>
+                <p>HUDAALIMGUNAWANSAPUTRA</p>
+                <p>Instagram : @hudhaalim</p>
+                <p>Faceebook : HudhaAlim</p>
+                <p>WhatsApp : 082211022275</p>
+                </p>
+            </div>
+        </body>
+</html>

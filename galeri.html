@@ -1,0 +1,157 @@
+<html>
+    <link rel= "shortcut icon" href="mugiwara.ico">
+    <head>
+        <title> Huda Alim 
+        </title>
+        <meta name="viewport" content="width=device-width, initialscale=1">
+        <style>
+            .container {
+                
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 15px 30px;
+                grid-gap: 0px;
+                background: lightgrey;
+            }
+            .topbar {
+                background: rgb(233, 141, 122);
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            .navbar {
+                background: grey;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 5;
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: grey;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: rgb(233, 141, 122);}
+            ul.navbar li a.active {background-color: rgb(233, 141, 122);}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+            
+            .content {
+                grid-row-start: 3;
+                grid-column-start: 1;
+                grid-column-end: 5;
+                max-width: 100%;
+                height: auto;
+                overflow: hidden;
+            }
+
+            .galeri {
+                width: 100%;
+                height: auto;
+                margin: 50px;
+            }
+
+            .image1 {
+                width: 300px;
+                margin: 20px;
+                padding: 20px;
+                margin-top: 15px;
+                float: left;
+            }
+
+            .image1 img 
+            {
+                width: 300px;
+            }
+
+            @media(max-width: 1024px)
+            .image1 img 
+            {
+                width: 300px;
+            }
+            @media(max-width: 800px)
+            .image1 img 
+            {
+                width:100px;
+            }
+            @media(max-width: 768px)
+            .image1 img 
+            {
+                width: 80px;
+            }
+
+            .footer {
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            max-width: 100%;
+            height: auto;
+            padding: 5px;
+            background: rgb(233, 141, 122);
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class='topbar'><font face="arial" size=2pt color=white><b><marquee loop="1000">SELAMAT DATANG DI RAFTEL</marquee></b></font></div>
+            <div class='navbar'>
+                <nav>
+                    <ul class="navbar">
+                        <font face="arial" size=2pt color=white><b>
+                        <li><a href="index.html">ABOUT ME</a></li>
+                        <li><a href="hobi.html">HOBBY & ENTHUSIAST</a></li>
+                        <li><a class="active" href="galeri.html">GALLERY</a></li>
+                        <li><a href="artikel.html">ARTICLE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content">
+                <div class="galeri">
+                   <font face="arial" color= black size= 5pt>
+                    GALERI SAYA
+                    </font>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/logo.png"alt>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/kemasan.png"alt>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/banner.png"alt>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/vektor_jam.png"alt>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/seragam.png"alt>
+                </div>
+                <div class="image1">
+                        <img src="gambar/galeri/nametag.png"alt>
+                </div>        
+            </div>
+            <div class='footer'>
+                    <font face="arial" size=2pt color=black><b>
+                    <p>
+                    <p>Copyright©2019</p>
+                    <p>HUDAALIMGUNAWANSAPUTRA</p>
+                    <p>Instagram : @hudhaalim</p>
+                    <p>Faceebook : HudhaAlim</p>
+                    <p>WhatsApp : 082211022275</p>
+                    </p>
+            </div>
+        </body>
+</html>
